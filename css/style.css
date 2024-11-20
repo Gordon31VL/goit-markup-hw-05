@@ -354,7 +354,6 @@ button{
     border: 1px solid #E7E9FC;
     border-top: none; 
     padding: 32px 16px;
-    z-index: 1000;
 }
 
 .example{
