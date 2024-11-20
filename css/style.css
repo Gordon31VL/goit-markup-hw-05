@@ -541,6 +541,9 @@ button{
     flex-direction: column;
     align-items: center;
 }
+.form-box{
+    margin-bottom: 8px;
+}
 .icon-position{
     margin-bottom: 8px;
 }
