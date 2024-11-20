@@ -29,6 +29,14 @@ ul, ol {
     list-style: none;
 }
 
+input, textarea, button {
+    outline: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
 .container {
     width: 1158px;
     margin: 0px auto;
@@ -164,6 +172,7 @@ ul, ol {
 .hero-image {
     max-width: 1440px;
     padding: 188px 0;
+    margin: 0 auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
@@ -186,6 +195,7 @@ ul, ol {
     text-align: center;
     color: #ffffff;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
 }
 .button{
     height: 56px;
@@ -199,7 +209,6 @@ ul, ol {
     font-family: "Roboto", sans-serif;
     padding: 16 32;
     border-radius: 4px;
-    margin-top: 48px;
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -241,11 +250,11 @@ ul, ol {
   }
 
 .icons-box{
+    width: 264;
     height: 112px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px 100px;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -409,7 +418,81 @@ ul, ol {
 .footer-contacts{
     display: flex;
     gap: 16px;
+    margin-right: 80px;
 }
 .footer .contact-links:hover, .footer .contact-links:focus{
     background-color: #31d0aa;
+}
+.footer-email-text{
+    display: block;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 75px;
+    height: 24px;
+}
+.footer-send{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+.footer-button{
+    width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.footer-post{
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: none;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.footer-post::placeholder{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 4%;
+}
+
+.modal-back{
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window{
+    width: 408px;
+    height: 584px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.close-modal{
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 8px;
+    width: 8px;
 }
