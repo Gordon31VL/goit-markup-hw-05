@@ -565,6 +565,9 @@ button{
 .form-icon-input{
     padding-left: 38px;
 }
+.input-comment{
+    margin-bottom: 16px;
+}
 .form-comment{
     height: 120px;
     resize: none;
@@ -573,7 +576,6 @@ button{
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    margin-bottom: 16px;
 }
 .form-comment::placeholder{
     color: rgba(117, 117, 117, 0.5);
