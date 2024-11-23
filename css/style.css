@@ -536,15 +536,8 @@ button{
 .form-icon-input:focus + svg{
     fill: #4d5ae5;
 }
-.modal-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form-box{
-    margin-bottom: 8px;
-}
-.icon-position{
+
+.input-box{
     margin-bottom: 8px;
 }
 .modal-form div{
@@ -592,9 +585,11 @@ button{
 }
 
 .form-button{
-    margin: 24px;
+    display: block;
+    margin: 24px auto;
     max-width: 169px;
-    max-height: 56px;
+    height: 56px;
+    
 }
 .check-box{
     display: flex;
