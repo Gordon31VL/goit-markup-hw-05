@@ -569,6 +569,11 @@ button{
     height: 120px;
     resize: none;
     padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    margin-bottom: 16px;
 }
 .form-comment::placeholder{
     color: rgba(117, 117, 117, 0.5);
@@ -586,7 +591,7 @@ button{
 
 .form-button{
     display: block;
-    margin: 24px auto;
+    margin: 0 auto;
     max-width: 169px;
     height: 56px;
     
@@ -594,8 +599,9 @@ button{
 .check-box{
     display: flex;
     justify-items: center;
+    margin-bottom: 24px;
 }
-.Privacy-link{
+.privacy-link{
     color: #4D5AE5;
     text-decoration: underline;
 }
@@ -613,14 +619,16 @@ button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .custom-checkbox .icons-contact{
     opacity: 0;
-    pointer-events: none;
 }
 .privacy:checked + .privacy-label > .custom-checkbox{
     background-color: #404BBF;
-    border: 1px solid rgba(64, 75, 191, 1);
+    border: none;
+    fill: #f4f4fd;
 }
 .privacy:checked + .privacy-label > .custom-checkbox .icons-contact{
     opacity: 1;
